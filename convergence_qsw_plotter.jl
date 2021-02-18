@@ -56,7 +56,7 @@ for gtype = ["_directed", ""]
     end
     legend(loc=1)
 
-    savefig("../convergence_qsw/nonmoral_statistics_probs$gtype.pdf",bbox_inches="tight", metadata = Dict("CreationDate" => nothing))
+    savefig("plots/convergence_qsw/nonmoral_statistics_probs$gtype.pdf",bbox_inches="tight", metadata = Dict("CreationDate" => nothing))
 end
 
 ## special graph
@@ -77,7 +77,7 @@ plot(times, result2[5,:], "b--", label=L"\varrho=\varrho''")
 ylabel(L"p(t, \varrho)(5)")
 xlabel("evolution time")
 legend(loc=4)
-savefig("../convergence_qsw/special_nmgqsw.pdf", bbox_inches="tight", metadata = Dict("CreationDate" => nothing))
+savefig("plots/convergence_qsw/special_nmgqsw.pdf", bbox_inches="tight", metadata = Dict("CreationDate" => nothing))
 
 ## path structure observance
 ωs = 0.5:0.05:1.
@@ -110,7 +110,7 @@ axes[2,1].plot(ωs, [sum(data_n[ωind, :].*(0:(n-1)).^2) for ωind=1:length(ωs)
 axes[2,1].set_xlim(.45, 1.05)
 axes[2,1].legend(loc=1)
 axes[2,1].set(ylabel=L"\mu_s", xlabel=L"\omega")
-savefig("../convergence_qsw/structure_observance_path.pdf", bbox_inches="tight", metadata = Dict("CreationDate" => nothing))
+savefig("plots/convergence_qsw/structure_observance_path.pdf", bbox_inches="tight", metadata = Dict("CreationDate" => nothing))
 
 ## ba structure observance
 cla()
@@ -177,7 +177,7 @@ axes[2,1].set(xlabel=L"\omega")
 axes[2,2].set(xlabel=L"\omega")
 axes[1,2].legend(loc=1,bbox_to_anchor=[1.7,1.05])
     
-savefig("../convergence_qsw/structure_observance_ba.pdf", bbox_inches="tight", metadata = Dict("CreationDate" => nothing))    
+savefig("plots/convergence_qsw/structure_observance_ba.pdf", bbox_inches="tight", metadata = Dict("CreationDate" => nothing))    
 
 ## global
 
@@ -221,7 +221,7 @@ for model = models
         yticks(visible=false)
     end
 
-    savefig("../convergence_qsw/global_statistics_convergence_$model.pdf", bbox_inches="tight", metadata = Dict("CreationDate" => nothing))
+    savefig("plots/convergence_qsw/global_statistics_convergence_$model.pdf", bbox_inches="tight", metadata = Dict("CreationDate" => nothing))
 end
 
 ## local
@@ -272,7 +272,7 @@ for model = models
         yticks(visible=false)
     end
 
-    savefig("../convergence_qsw/local_statistics_convergence_$model.pdf", bbox_inches="tight", metadata = Dict("CreationDate" => nothing))
+    savefig("plots/convergence_qsw/local_statistics_convergence_$model.pdf", bbox_inches="tight", metadata = Dict("CreationDate" => nothing))
 end
 
 
@@ -325,7 +325,7 @@ for model = models
         yticks(visible=false)
     end
 
-    savefig("../convergence_qsw/nonmoral_statistics_convergence_$model.pdf",bbox_inches="tight", metadata = Dict("CreationDate" => nothing))
+    savefig("plots/convergence_qsw/nonmoral_statistics_convergence_$model.pdf",bbox_inches="tight", metadata = Dict("CreationDate" => nothing))
 end
 ## special graph
 

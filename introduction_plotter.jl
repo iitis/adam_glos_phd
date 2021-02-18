@@ -34,13 +34,13 @@ plot(-bound:bound, classical_dist,"ko-", markersize=2,linewidth=.4)
 ylim(-0.005,0.085)
 ylabel("probability")
 xlabel("position")
-savefig("../introduction/classical.pdf", bbox_inches="tight", metadata = Dict("CreationDate" => nothing))
+savefig("plots/introduction/classical.pdf", bbox_inches="tight", metadata = Dict("CreationDate" => nothing))
 
 f = figure(figsize=(2.5,2))
 plot(-bound:bound, quantum_dist,"ko-", markersize=2,linewidth=.4)
 ylim(-0.005,0.085)
 yticks(visible=false)
 xlabel("position")
-savefig("../introduction/quantum.pdf", bbox_inches="tight", metadata = Dict("CreationDate" => nothing))
+savefig("plots/introduction/quantum.pdf", bbox_inches="tight", metadata = Dict("CreationDate" => nothing))
 
 

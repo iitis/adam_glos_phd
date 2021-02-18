@@ -24,7 +24,7 @@ setp(axes, ylim=[-0.0,2.0], xlim=[-0.0,1.0])
 handles, labels = axes[1].get_legend_handles_labels()
 leg = fig.legend(handles, labels, loc="upper center", ncol=3,framealpha=0)
 leg.get_frame().set_linewidth(0.0)
-savefig("../complex_search/cl_visualization.pdf", bbox_inches="tight", metadata = Dict("CreationDate" => nothing))
+savefig("plots/complex_search/cl_visualization.pdf", bbox_inches="tight", metadata = Dict("CreationDate" => nothing))
 
 ## BA 
 
@@ -68,7 +68,7 @@ for node=nodes
         axs[2,i].set_ylim(2, 15_000)
     end    
 
-    savefig("../complex_search/ba_$m0-$node.pdf", bbox_inches="tight", metadata = Dict("CreationDate" => nothing))
+    savefig("plots/complex_search/ba_$m0-$node.pdf", bbox_inches="tight", metadata = Dict("CreationDate" => nothing))
 end
 
 repeating = 200 # consider all!
@@ -116,5 +116,5 @@ for node=nodes
         axs[2,i].set_ylim(-0.2, 10.2) #TODO fill
     end    
 
-    savefig("../complex_search/ba_$m0-$node-exponent.pdf", bbox_inches="tight", metadata = Dict("CreationDate" => nothing))
+    savefig("plots/complex_search/ba_$m0-$node-exponent.pdf", bbox_inches="tight", metadata = Dict("CreationDate" => nothing))
 end

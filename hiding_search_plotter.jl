@@ -22,7 +22,7 @@ xscale("log")
 xlabel(L"p_0")
 ylabel("succ. prob. lower bound")
 yticks([0, 0.5, 1.])
-savefig("../hiding_search/p0_theoretical.pdf", bbox_inches="tight", metadata = Dict("CreationDate" => nothing))
+savefig("plots/hiding_search/p0_theoretical.pdf", bbox_inches="tight", metadata = Dict("CreationDate" => nothing))
 
 ## p0 real scenarios
 p0s = .5:.5:2.
@@ -70,4 +70,4 @@ for (p0, ax) = zip(p0s, axes)
     ax.label_outer()   
 end
 axes[1].set(ylabel="succ. prob.")
-savefig("../hiding_search/real_statistics_p0.pdf", bbox_inches="tight", metadata = Dict("CreationDate" => nothing))
+savefig("plots/hiding_search/real_statistics_p0.pdf", bbox_inches="tight", metadata = Dict("CreationDate" => nothing))

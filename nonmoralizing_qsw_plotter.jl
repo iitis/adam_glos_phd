@@ -22,7 +22,7 @@ ylim(ylims...)
 xlabel(L"\log_{10} (|\lambda|)")
 leg = legend(loc=2)
 
-savefig("../nonmoralizing_qsw/loc_ham_analysis.pdf", bbox_inches="tight", metadata = Dict("CreationDate" => nothing))
+savefig("plots/nonmoralizing_qsw/loc_ham_analysis.pdf", bbox_inches="tight", metadata = Dict("CreationDate" => nothing))
 
 ##
 
@@ -47,7 +47,7 @@ legend(loc=1, fontsize=6)
 ylim(-.005, 0.065)
 xlabel("position")
 ylabel("measurement probability")
-savefig("../nonmoralizing_qsw/nonsymmetric.pdf", bbox_inches="tight", metadata = Dict("CreationDate" => nothing))
+savefig("plots/nonmoralizing_qsw/nonsymmetric.pdf", bbox_inches="tight", metadata = Dict("CreationDate" => nothing))
 
 cla()
 figure(figsize=[2.8, 2])
@@ -61,7 +61,7 @@ ylim(-.005, 0.065)
 yticks(visible=false)
 xlabel("position")
 
-savefig("../nonmoralizing_qsw/symmetric.pdf", bbox_inches="tight", metadata = Dict("CreationDate" => nothing))
+savefig("plots/nonmoralizing_qsw/symmetric.pdf", bbox_inches="tight", metadata = Dict("CreationDate" => nothing))
 
 ## scaling new
 ω_select = [1,2,4,6]
@@ -110,5 +110,5 @@ hlines([1,2], 0, maximum(data_t_cont), linestyles="-", linewidth=.6)
 
 xlabel("time \$t\$")
 ylabel("scaling exponent \$\\alpha_t \$")
-savefig("../nonmoralizing_qsw/scaling.pdf", bbox_inches="tight", metadata = Dict("CreationDate" => nothing))
+savefig("plots/nonmoralizing_qsw/scaling.pdf", bbox_inches="tight", metadata = Dict("CreationDate" => nothing))
 

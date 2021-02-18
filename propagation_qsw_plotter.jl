@@ -19,7 +19,7 @@ xlabel("position")
 ylabel("measurement probability")
 ylim(0., 0.055)
 xlim(-divn-5, divn+5)
-savefig("../nonmoralizing_qsw/global_vs_local_prob_dist.pdf", bbox_inches = "tight", metadata = Dict("CreationDate" => nothing))
+savefig("plots/nonmoralizing_qsw/global_vs_local_prob_dist.pdf", bbox_inches = "tight", metadata = Dict("CreationDate" => nothing))
 
 ## scaling LQSW
 linestyles = [":g", "-.b", "-k"]
@@ -46,7 +46,7 @@ ylim(0.9, 2.05)
 
 xlabel("time \$t\$")
 ylabel("scaling exponent \$\\alpha \$")
-savefig("../nonmoralizing_qsw/scaling_exponent_local.pdf", bbox_inches = "tight", metadata = Dict("CreationDate" => nothing))
+savefig("plots/nonmoralizing_qsw/scaling_exponent_local.pdf", bbox_inches = "tight", metadata = Dict("CreationDate" => nothing))
 
 ## scaling LQSW
 ω_select = [1,3,4,6]
@@ -72,4 +72,4 @@ ylim(0.9, 2.05)
 yticks(visible=false)
 
 xlabel("time \$t\$")
-savefig("../nonmoralizing_qsw/scaling_exponent_global.pdf", bbox_inches = "tight", metadata = Dict("CreationDate" => nothing))
+savefig("plots/nonmoralizing_qsw/scaling_exponent_global.pdf", bbox_inches = "tight", metadata = Dict("CreationDate" => nothing))
